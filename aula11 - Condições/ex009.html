@@ -19,9 +19,9 @@
             var res = window.document.querySelector('div#res')
             
             if (país != 'Brasil') {
-                console.log('Você é Estrangeiro!')
+                res.innerText += 'Você é Estrangeiro!'
             } else {
-                res.innerHTML = `<p>console.log('Você é Brasileiro!')</p>`
+                res.innerText += 'Você é Brasileiro!'
             }
         }
     </script>
