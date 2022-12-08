@@ -23,13 +23,15 @@
     </div>
 
     <script>
-        var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
+        var a = window.document.getElementById('area') //primeiro eu seleciono o html com getElementBy ou querySelector, depois eu uso as manupulações que podem ser: a.innerText, a.innerHTML,  a.style.background, .value, etc
+
+        //EVENTOS DOM
+        a.addEventListener('click', clicar) // 'click' é o evento. clicar é a função que será disparada
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
 
         function cliclar() {
-            a.innerText = 'Clicou!'
+            a.innerText = 'Clicou!' 
             a.style.background = 'red'
         }
         function entrar() {
